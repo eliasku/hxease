@@ -4,9 +4,9 @@
 class Back {
 	public inline static var DEFAULT_OVERSHOOT:Float = 1.70158;
 
-	public static var easeIn(default, null):IEasing = new BackEaseIn(DEFAULT_OVERSHOOT);
-	public static var easeInOut(default, null):IEasing = new BackEaseInOut(DEFAULT_OVERSHOOT);
-	public static var easeOut(default, null):IEasing = new BackEaseOut(DEFAULT_OVERSHOOT);
+	public static var easeIn(default, null):BackEaseIn = new BackEaseIn(DEFAULT_OVERSHOOT);
+	public static var easeInOut(default, null):BackEaseInOut = new BackEaseInOut(DEFAULT_OVERSHOOT);
+	public static var easeOut(default, null):BackEaseOut = new BackEaseOut(DEFAULT_OVERSHOOT);
 }
 
 class BackEaseIn implements IEasing {

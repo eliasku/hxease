@@ -5,9 +5,9 @@ class Elastic {
 	public inline static var DEFAULT_AMPLITUDE:Float = 0.1;
 	public inline static var DEFAULT_PERIOD:Float = 0.4;
 
-	public static var easeIn(default, null):IEasing = new ElasticEaseIn(DEFAULT_AMPLITUDE, DEFAULT_PERIOD);
-	public static var easeInOut(default, null):IEasing = new ElasticEaseInOut(DEFAULT_AMPLITUDE, DEFAULT_PERIOD);
-	public static var easeOut(default, null):IEasing = new ElasticEaseOut(DEFAULT_AMPLITUDE, DEFAULT_PERIOD);
+	public static var easeIn(default, null):ElasticEaseIn = new ElasticEaseIn(DEFAULT_AMPLITUDE, DEFAULT_PERIOD);
+	public static var easeInOut(default, null):ElasticEaseInOut = new ElasticEaseInOut(DEFAULT_AMPLITUDE, DEFAULT_PERIOD);
+	public static var easeOut(default, null):ElasticEaseOut = new ElasticEaseOut(DEFAULT_AMPLITUDE, DEFAULT_PERIOD);
 }
 
 class ElasticEaseIn implements IEasing {

@@ -2,9 +2,9 @@ package hxease;
 
 @:final
 class Quint {
-	public static var easeIn(default, null):IEasing = new QuintEaseIn();
-	public static var easeInOut(default, null):IEasing = new QuintEaseInOut();
-	public static var easeOut(default, null):IEasing = new QuintEaseOut();
+	public static var easeIn(default, null):QuintEaseIn = new QuintEaseIn();
+	public static var easeInOut(default, null):QuintEaseInOut = new QuintEaseInOut();
+	public static var easeOut(default, null):QuintEaseOut = new QuintEaseOut();
 }
 
 class QuintEaseIn implements IEasing {

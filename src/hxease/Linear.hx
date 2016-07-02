@@ -2,8 +2,8 @@ package hxease;
 
 @:final
 class Linear {
-	public static var easeNone(default, null):IEasing = new LinearEaseNone();
-	public static var easeStep(default, null):IEasing = new LinearEaseStep();
+	public static var easeNone(default, null):LinearEaseNone = new LinearEaseNone();
+	public static var easeStep(default, null):LinearEaseStep = new LinearEaseStep();
 }
 
 class LinearEaseNone implements IEasing {

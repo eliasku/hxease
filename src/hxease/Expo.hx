@@ -2,9 +2,9 @@
 
 @:final
 class Expo {
-	public static var easeIn(default, null):IEasing = new ExpoEaseIn();
-	public static var easeInOut(default, null):IEasing = new ExpoEaseInOut();
-	public static var easeOut(default, null):IEasing = new ExpoEaseOut();
+	public static var easeIn(default, null):ExpoEaseIn = new ExpoEaseIn();
+	public static var easeInOut(default, null):ExpoEaseInOut = new ExpoEaseInOut();
+	public static var easeOut(default, null):ExpoEaseOut = new ExpoEaseOut();
 }
 
 class ExpoEaseIn implements IEasing {

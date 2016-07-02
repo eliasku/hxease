@@ -2,9 +2,9 @@
 
 @:final
 class Sine {
-	public static var easeIn(default, null):IEasing = new SineEaseIn();
-	public static var easeInOut(default, null):IEasing = new SineEaseInOut();
-	public static var easeOut(default, null):IEasing = new SineEaseOut();
+	public static var easeIn(default, null):SineEaseIn = new SineEaseIn();
+	public static var easeInOut(default, null):SineEaseInOut = new SineEaseInOut();
+	public static var easeOut(default, null):SineEaseOut = new SineEaseOut();
 }
 
 class SineEaseIn implements IEasing {

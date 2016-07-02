@@ -2,9 +2,9 @@ package hxease;
 
 @:final
 class Bounce {
-	public static var easeIn(default, null):IEasing = new BounceEaseIn();
-	public static var easeInOut(default, null):IEasing = new BounceEaseInOut();
-	public static var easeOut(default, null):IEasing = new BounceEaseOut();
+	public static var easeIn(default, null):BounceEaseIn = new BounceEaseIn();
+	public static var easeInOut(default, null):BounceEaseInOut = new BounceEaseInOut();
+	public static var easeOut(default, null):BounceEaseOut = new BounceEaseOut();
 }
 
 class BounceEaseIn implements IEasing {

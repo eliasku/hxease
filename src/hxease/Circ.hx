@@ -2,9 +2,9 @@ package hxease;
 
 @:final
 class Circ {
-	public static var easeIn(default, null):IEasing = new CircEaseIn();
-	public static var easeInOut(default, null):IEasing = new CircEaseInOut();
-	public static var easeOut(default, null):IEasing = new CircEaseOut();
+	public static var easeIn(default, null):CircEaseIn = new CircEaseIn();
+	public static var easeInOut(default, null):CircEaseInOut = new CircEaseInOut();
+	public static var easeOut(default, null):CircEaseOut = new CircEaseOut();
 }
 
 class CircEaseIn implements IEasing {

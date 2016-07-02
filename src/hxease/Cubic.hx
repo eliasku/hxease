@@ -2,9 +2,9 @@ package hxease;
 
 @:final
 class Cubic {
-	public static var easeIn(default, null):IEasing = new CubicEaseIn();
-	public static var easeInOut(default, null):IEasing = new CubicEaseInOut();
-	public static var easeOut(default, null):IEasing = new CubicEaseOut();
+	public static var easeIn(default, null):CubicEaseIn = new CubicEaseIn();
+	public static var easeInOut(default, null):CubicEaseInOut = new CubicEaseInOut();
+	public static var easeOut(default, null):CubicEaseOut = new CubicEaseOut();
 }
 
 class CubicEaseIn implements IEasing {
