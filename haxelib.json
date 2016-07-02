@@ -1,0 +1,10 @@
+{
+	"name": "hxease",
+	"classPath": "src",
+	"description": "Easing functions for Haxe",
+	"contributors": [],
+	"version": "0.0.1",
+	"dependencies": {
+		"utest": ""
+	}
+}
