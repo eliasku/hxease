@@ -1,0 +1,36 @@
+version: "{build}"
+
+environment:
+  global:
+    HAXELIB_ROOT: C:\projects\haxelib
+
+matrix:
+  fast_finish: true
+
+environment:
+  matrix:
+    - TARGET: interp
+#    - TARGET: cpp
+    - TARGET: cs
+    - TARGET: java
+    - TARGET: neko
+#    - TARGET=flash
+#    - TARGET=js
+#    - TARGET: node
+#    - TARGET: php
+#    - TARGET: python
+#    - TARGET=lua
+
+install:
+  - cinst haxe -version 3.2.1 -y
+  - RefreshEnv
+  - mkdir "%HAXELIB_ROOT%"
+  - haxelib setup "%HAXELIB_ROOT%"
+  - haxelib git hxmake https://github.com/eliasku/hxmake.git
+  - haxelib run hxmake _
+  - haxelib dev hxease .
+
+build: off
+
+test_script:
+  - hxmake test -test=%TARGET%
