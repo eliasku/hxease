@@ -4,9 +4,9 @@ environment:
   global:
     HAXELIB_ROOT: C:\projects\haxelib
   matrix:
-    - TARGET: interp
-    - TARGET: neko
-    - TARGET: java
+    #- TARGET: interp
+    #- TARGET: neko
+    #- TARGET: java
     #- TARGET: cs
     #- TARGET: cpp
 #    - TARGET: flash
@@ -14,7 +14,7 @@ environment:
     - TARGET: node
     - TARGET: python
     - TARGET: php
-    - TARGET: lua
+#    - TARGET: lua
 
 matrix:
   fast_finish: true
