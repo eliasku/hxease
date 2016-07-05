@@ -4,11 +4,11 @@ environment:
   global:
     HAXELIB_ROOT: C:\projects\haxelib
   matrix:
-    - TARGET: interp
+    #- TARGET: interp
     - TARGET: cpp
     - TARGET: cs
-    - TARGET: java
-    - TARGET: neko
+    #- TARGET: java
+    #- TARGET: neko
 #    - TARGET: flash
 #    - TARGET: js
 #    - TARGET: node
