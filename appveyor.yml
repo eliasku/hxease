@@ -3,11 +3,6 @@ version: "{build}"
 environment:
   global:
     HAXELIB_ROOT: C:\projects\haxelib
-
-matrix:
-  fast_finish: true
-
-environment:
   matrix:
     - TARGET: interp
 #    - TARGET: cpp
@@ -20,6 +15,9 @@ environment:
 #    - TARGET: php
 #    - TARGET: python
 #    - TARGET=lua
+
+matrix:
+  fast_finish: true
 
 install:
   - cinst haxe -version 3.2.1 -y
