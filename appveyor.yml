@@ -31,4 +31,4 @@ install:
 build: off
 
 test_script:
-  - hxmake test -test="%TARGET%"
+  - haxelib run hxmake test -test="%TARGET%"
