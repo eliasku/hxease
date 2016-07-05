@@ -1,4 +1,6 @@
 # hxease
+[![Build Status](https://travis-ci.org/eliasku/hxease.svg?branch=master)](https://travis-ci.org/eliasku/hxease)
+
 Ease functions for Haxe
 
 ## Usage examples

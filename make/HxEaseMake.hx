@@ -1,3 +1,4 @@
+import hxmake.test.TestTask;
 import hxmake.idea.IdeaPlugin;
 import hxmake.haxelib.HaxelibPlugin;
 
@@ -18,5 +19,10 @@ class HxEaseMake extends hxmake.Module {
 		apply(IdeaPlugin);
 
 		library();
+
+		var tt = new TestTask();
+		tt.targets = ["neko", "flash", "js", "cpp"];
+		tt.libs = ["hxease"];
+		task("test", tt);
 	}
 }
