@@ -9,6 +9,7 @@ class HxEaseMake extends hxmake.Module {
 		config.description = "Easing functions for Haxe";
 		config.version = "0.0.1";
 		config.classPath = ["src"];
+		config.testPath = ["test"];
 		config.devDependencies = [
 			"utest" => "haxelib"
 		];
