@@ -8,7 +8,7 @@ class Linear {
 
 class LinearEaseNone implements IEasing {
 
-	public function new () {}
+	inline public function new () {}
 
 	public function calculate(ratio:Float):Float {
 		return ratio;
@@ -17,7 +17,7 @@ class LinearEaseNone implements IEasing {
 
 class LinearEaseStep implements IEasing {
 
-	public function new () {}
+	inline public function new () {}
 
 	public function calculate(ratio:Float):Float {
 		return ratio < 1 ? 0 : 1;

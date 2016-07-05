@@ -8,8 +8,8 @@ class Expo {
 }
 
 class ExpoEaseIn implements IEasing {
-	
-	public function new() {}
+
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
 		return k == 0 ? 0 : Math.pow(2, 10 * (k - 1));
@@ -18,7 +18,7 @@ class ExpoEaseIn implements IEasing {
 
 class ExpoEaseInOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
 		if (k == 0) { return 0; }
@@ -32,7 +32,7 @@ class ExpoEaseInOut implements IEasing {
 
 class ExpoEaseOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
 		return k == 1 ? 1 : (1 - Math.pow(2, -10 * k));

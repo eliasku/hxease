@@ -9,7 +9,7 @@ class Cubic {
 
 class CubicEaseIn implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(ratio:Float):Float {
 		return ratio * ratio * ratio;
@@ -18,7 +18,7 @@ class CubicEaseIn implements IEasing {
 
 class CubicEaseInOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(ratio:Float):Float {
 		return ((ratio /= 1 / 2) < 1) ? 0.5 * ratio * ratio * ratio : 0.5 * ((ratio -= 2) * ratio * ratio + 2);
@@ -27,7 +27,7 @@ class CubicEaseInOut implements IEasing {
 
 class CubicEaseOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(ratio:Float):Float {
 		return --ratio * ratio * ratio + 1;

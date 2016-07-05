@@ -2,9 +2,11 @@ package hxease;
 
 import utest.Assert;
 
-using hxease.EaseTools;
+using hxease.Tools;
 
 class EaseTest {
+
+    inline static var STEPS:Int = 100;
 
     public function new() {}
 
@@ -14,8 +16,8 @@ class EaseTest {
         var easeFunc:Float->Float = easeInstance.calculate;
         Assert.equals(0, easeFunc(0));
         Assert.equals(1, easeFunc(1));
-        for(i in 0...101) {
-            var x = i / 100;
+        for(i in 0...(STEPS + 1)) {
+            var x = i / STEPS;
             if(!Math.isFinite(easeFunc(x))) {
                 Assert.fail("Easing must provide finite float value in 0..1 interval");
             }
@@ -34,62 +36,62 @@ class EaseTest {
     }
 
     public function testQuad() {
-        checkEquation(Quad.easeIn, EaseTools.quadIn);
-        checkEquation(Quad.easeOut, EaseTools.quadOut);
-        checkEquation(Quad.easeInOut, EaseTools.quadInOut);
+        checkEquation(Quad.easeIn, Tools.quadIn);
+        checkEquation(Quad.easeOut, Tools.quadOut);
+        checkEquation(Quad.easeInOut, Tools.quadInOut);
     }
 
     public function testCubic() {
-        checkEquation(Cubic.easeIn, EaseTools.cubicIn);
-        checkEquation(Cubic.easeOut, EaseTools.cubicOut);
-        checkEquation(Cubic.easeInOut, EaseTools.cubicInOut);
+        checkEquation(Cubic.easeIn, Tools.cubicIn);
+        checkEquation(Cubic.easeOut, Tools.cubicOut);
+        checkEquation(Cubic.easeInOut, Tools.cubicInOut);
     }
 
     public function testQuart() {
-        checkEquation(Quart.easeIn, EaseTools.quartIn);
-        checkEquation(Quart.easeOut, EaseTools.quartOut);
-        checkEquation(Quart.easeInOut, EaseTools.quartInOut);
+        checkEquation(Quart.easeIn, Tools.quartIn);
+        checkEquation(Quart.easeOut, Tools.quartOut);
+        checkEquation(Quart.easeInOut, Tools.quartInOut);
     }
 
     public function testQuint() {
-        checkEquation(Quint.easeIn, EaseTools.quintIn);
-        checkEquation(Quint.easeOut, EaseTools.quintOut);
-        checkEquation(Quint.easeInOut, EaseTools.quintInOut);
+        checkEquation(Quint.easeIn, Tools.quintIn);
+        checkEquation(Quint.easeOut, Tools.quintOut);
+        checkEquation(Quint.easeInOut, Tools.quintInOut);
     }
 
     public function testCirc() {
-        checkEquation(Circ.easeIn, EaseTools.circIn);
-        checkEquation(Circ.easeOut, EaseTools.circOut);
-        checkEquation(Circ.easeInOut, EaseTools.circInOut);
+        checkEquation(Circ.easeIn, Tools.circIn);
+        checkEquation(Circ.easeOut, Tools.circOut);
+        checkEquation(Circ.easeInOut, Tools.circInOut);
     }
 
     public function testExpo() {
-        checkEquation(Expo.easeIn, EaseTools.expoIn);
-        checkEquation(Expo.easeOut, EaseTools.expoOut);
-        checkEquation(Expo.easeInOut, EaseTools.expoInOut);
+        checkEquation(Expo.easeIn, Tools.expoIn);
+        checkEquation(Expo.easeOut, Tools.expoOut);
+        checkEquation(Expo.easeInOut, Tools.expoInOut);
     }
 
     public function testSine() {
-        checkEquation(Sine.easeIn, EaseTools.sineIn);
-        checkEquation(Sine.easeOut, EaseTools.sineOut);
-        checkEquation(Sine.easeInOut, EaseTools.sineInOut);
-    }
-
-    public function testBack() {
-        checkEquation(Back.easeIn, EaseTools.backIn);
-        checkEquation(Back.easeOut, EaseTools.backOut);
-        checkEquation(Back.easeInOut, EaseTools.backInOut);
+        checkEquation(Sine.easeIn, Tools.sineIn);
+        checkEquation(Sine.easeOut, Tools.sineOut);
+        checkEquation(Sine.easeInOut, Tools.sineInOut);
     }
 
     public function testBounce() {
-        checkEquation(Bounce.easeIn, EaseTools.bounceIn);
-        checkEquation(Bounce.easeOut, EaseTools.bounceOut);
-        checkEquation(Bounce.easeInOut, EaseTools.bounceInOut);
+        checkEquation(Bounce.easeIn, Tools.bounceIn);
+        checkEquation(Bounce.easeOut, Tools.bounceOut);
+        checkEquation(Bounce.easeInOut, Tools.bounceInOut);
+    }
+
+    public function testBack() {
+        checkEquation(Back.easeIn, Tools.backIn, false);
+        checkEquation(Back.easeOut, Tools.backOut, false);
+        checkEquation(Back.easeInOut, Tools.backInOut, false);
     }
 
     public function testElastic() {
-        checkEquation(Elastic.easeIn, EaseTools.elasticIn);
-        checkEquation(Elastic.easeOut, EaseTools.elasticOut);
-        checkEquation(Elastic.easeInOut, EaseTools.elasticInOut);
+        checkEquation(Elastic.easeIn, Tools.elasticIn, false);
+        checkEquation(Elastic.easeOut, Tools.elasticOut, false);
+        checkEquation(Elastic.easeInOut, Tools.elasticInOut, false);
     }
 }

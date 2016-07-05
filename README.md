@@ -13,12 +13,10 @@ easedValue = Back.easeOut.calculate(ratio);
 easedValue = new BackEaseOut(2.01).calculate(ratio);
 
 // Float static extension with
-// `using hxease.EaseTools`
+// `using hxease.Tools`
 easedValue = ratio.backOut().circIn();
 ```
 
 ## TODO
-1. unit tests (with utest)
-2. custom curves
-3. tools for `ratio` manipulations
-4. inline constructors for in-place usage
+1. custom curves
+2. tools for `ratio` manipulations

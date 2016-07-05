@@ -15,7 +15,7 @@ class ElasticEaseIn implements IEasing {
 	public var amplitude(default, null):Float;
     public var period(default, null):Float;
 
-	public function new(amplitude:Float, period:Float) {
+	inline public function new(amplitude:Float, period:Float) {
 		this.amplitude = amplitude;
 		this.period = period;
 	}
@@ -40,7 +40,7 @@ class ElasticEaseInOut implements IEasing {
 	public var amplitude(default, null):Float;
 	public var period(default, null):Float;
 
-	public function new(amplitude:Float, p:Float) {
+	inline public function new(amplitude:Float, p:Float) {
 		this.amplitude = amplitude;
 		this.period = p;
 	}
@@ -69,7 +69,7 @@ class ElasticEaseOut implements IEasing {
 	public var amplitude(default, null):Float;
 	public var period(default, null):Float;
 
-	public function new(amplitude:Float, period:Float) {
+	inline public function new(amplitude:Float, period:Float) {
 		this.amplitude = amplitude;
 		this.period = period;
 	}

@@ -13,7 +13,7 @@ class BackEaseIn implements IEasing {
 
 	public var overshoot(default, null):Float;
 
-	public function new(overshoot:Float) {
+	inline public function new(overshoot:Float) {
 		this.overshoot = overshoot;
 	}
 
@@ -27,7 +27,7 @@ class BackEaseInOut implements IEasing {
 
 	public var overshoot(default, null):Float;
 
-	public function new(overshoot:Float) {
+	inline public function new(overshoot:Float) {
 		this.overshoot = overshoot;
 	}
 
@@ -44,7 +44,7 @@ class BackEaseOut implements IEasing {
 
 	public var overshoot(default, null):Float;
 
-	public function new(overshoot:Float) {
+	inline public function new(overshoot:Float) {
 		this.overshoot = overshoot;
 	}
 

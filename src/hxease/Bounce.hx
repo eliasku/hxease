@@ -16,7 +16,7 @@ class BounceEaseIn implements IEasing {
 	static inline var B5:Float = 2.25 / 2.75;
 	static inline var B6:Float = 2.625 / 2.75;
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(ratio:Float):Float {
 		ratio = 1 - ratio;
@@ -36,7 +36,7 @@ class BounceEaseInOut implements IEasing {
 	static inline var B5:Float = 2.25 / 2.75;
 	static inline var B6:Float = 2.625 / 2.75;
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(ratio:Float):Float {
 		if (ratio < .5) {
@@ -63,7 +63,7 @@ class BounceEaseOut implements IEasing {
 	static inline var B5:Float = 2.25 / 2.75;
 	static inline var B6:Float = 2.625 / 2.75;
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(ratio:Float):Float {
 		if (ratio < B1) return 7.5625 * ratio * ratio;

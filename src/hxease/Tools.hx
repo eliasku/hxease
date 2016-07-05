@@ -1,7 +1,7 @@
 package hxease;
 
 @:final
-class EaseTools {
+class Tools {
 
 	inline public static function ease(t:Float, easing:IEasing):Float {
 		return easing.calculate(t);

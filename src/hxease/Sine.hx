@@ -8,8 +8,8 @@ class Sine {
 }
 
 class SineEaseIn implements IEasing {
-	
-	public function new() {}
+
+	inline public function new() {}
 	
 	public function calculate(t:Float):Float {
 		if(t == 1) return 1;
@@ -18,19 +18,19 @@ class SineEaseIn implements IEasing {
 }
 
 class SineEaseInOut implements IEasing {
-	
-	public function new() {}
+
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
-		return - (Math.cos(Math.PI * k) - 1) / 2;
+		return -0.5 * (Math.cos(Math.PI * k) - 1);
 	}
 }
 
 class SineEaseOut implements IEasing {
-	
-	public function new() {}
+
+	inline public function new() {}
 	
 	public function calculate(k:Float):Float {
-		return Math.sin(k * (Math.PI / 2));
+		return Math.sin(k * (Math.PI * 0.5));
 	}
 }

@@ -9,7 +9,7 @@ class Quart {
 
 class QuartEaseIn implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
 		return k * k * k * k;
@@ -18,7 +18,7 @@ class QuartEaseIn implements IEasing {
 
 class QuartEaseInOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
 		if ((k *= 2) < 1) {
@@ -30,7 +30,7 @@ class QuartEaseInOut implements IEasing {
 
 class QuartEaseOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(k:Float):Float {
 		return -(--k * k * k * k - 1);

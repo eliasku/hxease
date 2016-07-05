@@ -9,7 +9,7 @@ class Circ {
 
 class CircEaseIn implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(t:Float):Float {
 		return -(Math.sqrt(1 - t * t) - 1);
@@ -18,7 +18,7 @@ class CircEaseIn implements IEasing {
 
 class CircEaseInOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(t:Float):Float {
 		return t <= .5 ? (Math.sqrt(1 - t * t * 4) - 1) / -2 : (Math.sqrt(1 - (t * 2 - 2) * (t * 2 - 2)) + 1) / 2;
@@ -27,7 +27,7 @@ class CircEaseInOut implements IEasing {
 
 class CircEaseOut implements IEasing {
 
-	public function new() {}
+	inline public function new() {}
 
 	public function calculate(t:Float):Float {
 		return Math.sqrt(1 - (t - 1) * (t - 1));
