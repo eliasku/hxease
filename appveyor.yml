@@ -5,16 +5,16 @@ environment:
     HAXELIB_ROOT: C:\projects\haxelib
   matrix:
     - TARGET: interp
-#    - TARGET: cpp
+    - TARGET: cpp
     - TARGET: cs
     - TARGET: java
     - TARGET: neko
-#    - TARGET=flash
-#    - TARGET=js
+#    - TARGET: flash
+#    - TARGET: js
 #    - TARGET: node
 #    - TARGET: php
 #    - TARGET: python
-#    - TARGET=lua
+#    - TARGET: lua
 
 matrix:
   fast_finish: true
@@ -31,4 +31,4 @@ install:
 build: off
 
 test_script:
-  - hxmake test -test=%TARGET%
+  - hxmake test -test="%TARGET%"
