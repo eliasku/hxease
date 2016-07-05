@@ -11,13 +11,27 @@ haxe:
   - "3.2.1"
   - development
 
+env:
+    matrix:
+#    - TARGET=interp
+#    - TARGET=cpp
+#    - TARGET=cs
+    - TARGET=java
+    - TARGET=neko
+    - TARGET=flash
+#    - TARGET=node
+#    - TARGET=php
+#    - TARGET=python
+
 # matrix:
 #   allow_failures:
 #     - haxe: development
 
 install:
   - haxelib dev hxease .
-  - haxelib install utest
+  - haxelib git hxmake https://github.com/eliasku/hxmake.git
+  - haxelib run hxmake _
 
 script:
-  - haxe test.hxml
+  - hxmake test -test=${TARGET}
+#  - haxe test.hxml
