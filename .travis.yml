@@ -13,15 +13,17 @@ haxe:
 
 env:
     matrix:
-#    - TARGET=interp
-#    - TARGET=cpp
-#    - TARGET=cs
+    - TARGET=interp
+    - TARGET=cpp
+    - TARGET=cs
     - TARGET=java
     - TARGET=neko
-    - TARGET=flash
-#    - TARGET=node
-#    - TARGET=php
-#    - TARGET=python
+#    - TARGET=flash
+#    - TARGET=js
+    - TARGET=node
+    - TARGET=php
+    - TARGET=python
+#    - TARGET=lua
 
 # matrix:
 #   allow_failures:
