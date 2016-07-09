@@ -22,7 +22,7 @@ class HxEaseMake extends hxmake.Module {
 
 		var tt = new TestTask();
 		tt.targets = ["neko", "flash", "js", "cpp", "java", "php"];//, "lua", "python"];
-		tt.libs = ["hxease"];
+		tt.libraries = ["hxease"];
 		task("test", tt);
 	}
 }

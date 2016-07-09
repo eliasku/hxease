@@ -11,6 +11,10 @@ haxe:
   - "3.2.1"
   - development
 
+branches:
+  only:
+    - master
+
 env:
     matrix:
     - TARGET=interp
@@ -32,7 +36,6 @@ env:
 install:
   - haxelib dev hxease .
   - haxelib git hxmake https://github.com/eliasku/hxmake.git
-  - haxelib run hxmake _
 
 script:
-  - hxmake test -test=${TARGET}
+  - haxelib run hxmake test --override-test-target=${TARGET}
