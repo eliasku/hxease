@@ -1,4 +1,3 @@
-import js.Browser;
 import utest.Runner;
 import utest.ui.Report;
 import utest.TestResult;
