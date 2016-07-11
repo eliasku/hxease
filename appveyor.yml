@@ -9,8 +9,8 @@ environment:
     #- TARGET: java
     #- TARGET: cs
     #- TARGET: cpp
-    - TARGET: flash
-#    - TARGET: js
+    #- TARGET: flash
+    - TARGET: js
     #- TARGET: node
     #- TARGET: python
 #    - TARGET: php
