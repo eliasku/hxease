@@ -19,5 +19,10 @@ class TestAll {
         var r:TestResult = null;
         runner.onProgress.add(function(o) { if (o.done == o.totals) r = o.result;});
         runner.run();
+
+        var exitCode = r.allOk() ? 0 : -1;
+        #if flash
+        flash.system.System.exit(exitCode);
+        #end
     }
 }

@@ -9,7 +9,7 @@ environment:
     - TARGET: java
     - TARGET: cs
     - TARGET: cpp
-#    - TARGET: flash
+    - TARGET: flash
 #    - TARGET: js
     - TARGET: node
     - TARGET: python

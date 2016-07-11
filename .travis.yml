@@ -22,7 +22,7 @@ env:
     - TARGET=cs
     - TARGET=java
     - TARGET=neko
-#    - TARGET=flash
+    - TARGET=flash
 #    - TARGET=js
     - TARGET=node
     - TARGET=php
