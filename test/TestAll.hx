@@ -29,12 +29,7 @@ class TestAll {
             #end
 
             #if js
-            if(exitCode == 0) {
-                js.Browser.window.close();
-            }
-            else {
-                throw "EXIT CODE: " + exitCode;
-            }
+            trace("<hxmake::exit>" + exitCode);
             #end
         });
         runner.run();
