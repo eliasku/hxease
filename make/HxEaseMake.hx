@@ -7,8 +7,6 @@ using hxmake.haxelib.HaxelibPlugin;
 class HxEaseMake extends hxmake.Module {
 
 	function new() {
-		config.description = "Easing functions for Haxe";
-		config.version = "0.0.1";
 		config.classPath = ["src"];
 		config.testPath = ["test"];
 		config.devDependencies = [
@@ -18,7 +16,13 @@ class HxEaseMake extends hxmake.Module {
 		apply(HaxelibPlugin);
 		apply(IdeaPlugin);
 
-		library();
+		var cfg = library().config;
+		cfg.description = "Easing functions for Haxe";
+		cfg.contributors = ["eliasku"];
+		cfg.url = "https://github.com/eliasku/hxease";
+		cfg.license = "MIT";
+		cfg.version = "0.0.1";
+		cfg.tags = ["easing", "ease", "math", "function", "motion", "tween", "cross"];
 
 		var tt = new TestTask();
 		tt.targets = ["neko", "flash", "js", "cpp", "java", "php"];//, "lua", "python"];
