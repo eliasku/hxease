@@ -1,18 +1,21 @@
 {
 	"name": "hxease",
-	"license": "https://github.com/eliasku/hxease",
+	"license": "MIT",
 	"tags": [
 		"easing",
 		"ease",
 		"math",
 		"function",
 		"motion",
-		"tween"
+		"tween",
+		"cross"
 	],
 	"classPath": "src",
 	"description": "Easing functions for Haxe",
 	"contributors": [
 		"eliasku"
 	],
-	"version": "0.0.1"
+	"releasenote": "Initial release",
+	"version": "1.0.0",
+	"url": "https://github.com/eliasku/hxease"
 }

@@ -21,7 +21,8 @@ class HxEaseMake extends hxmake.Module {
 		cfg.contributors = ["eliasku"];
 		cfg.url = "https://github.com/eliasku/hxease";
 		cfg.license = "MIT";
-		cfg.version = "0.0.1";
+		cfg.version = "1.0.0";
+		cfg.releasenote = "Initial release";
 		cfg.tags = ["easing", "ease", "math", "function", "motion", "tween", "cross"];
 
 		var tt = new TestTask();
