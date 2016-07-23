@@ -1,3 +1,4 @@
+import hxmake.haxelib.HaxelibExt;
 import hxmake.test.TestTask;
 import hxmake.idea.IdeaPlugin;
 import hxmake.haxelib.HaxelibPlugin;
@@ -16,14 +17,17 @@ class HxEaseMake extends hxmake.Module {
 		apply(HaxelibPlugin);
 		apply(IdeaPlugin);
 
-		var cfg = library().config;
-		cfg.description = "Easing functions for Haxe";
-		cfg.contributors = ["eliasku"];
-		cfg.url = "https://github.com/eliasku/hxease";
-		cfg.license = "MIT";
-		cfg.version = "1.0.0";
-		cfg.releasenote = "Initial release";
-		cfg.tags = ["easing", "ease", "math", "function", "motion", "tween", "cross"];
+		library(function (ext:HaxelibExt) {
+			ext.config.description = "Easing functions for Haxe";
+			ext.config.contributors = ["eliasku"];
+			ext.config.url = "https://github.com/eliasku/hxease";
+			ext.config.license = "MIT";
+			ext.config.version = "1.0.0";
+			ext.config.releasenote = "Initial release";
+			ext.config.tags = ["easing", "ease", "math", "function", "motion", "tween", "cross"];
+
+			ext.pack.includes = ["src", "haxelib.json", "README.md"];
+		});
 
 		var tt = new TestTask();
 		tt.targets = ["neko", "flash", "js", "cpp", "java", "php"];//, "lua", "python"];
