@@ -10,9 +10,11 @@ class TestAll {
 
     public static function main() {
         var runner = new Runner();
-
         addTests(runner);
+        run(runner);
+    }
 
+    static function run(runner:Runner) {
         Report.create(runner);
 
         // get test result to determine exit status
@@ -31,6 +33,7 @@ class TestAll {
             trace("<hxmake::exit>" + exitCode);
             #end
         });
+
         runner.run();
     }
 
