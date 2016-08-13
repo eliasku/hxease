@@ -24,9 +24,9 @@ env:
     - TARGET=php,python
 #    - TARGET=lua
 
-#matrix:
-#  allow_failures:
-#    - haxe: development
+matrix:
+  allow_failures:
+    - haxe: development
 
 install:
   - haxelib dev hxease .
