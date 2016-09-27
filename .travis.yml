@@ -17,11 +17,16 @@ branches:
 
 env:
     matrix:
-    - TARGET=interp,neko
+    - TARGET=interp
+    - TARGET=neko
     - TARGET=cpp
-    - TARGET=cs,java
-    - TARGET=flash,js,node
-    - TARGET=php,python
+    - TARGET=cs
+    - TARGET=java
+    - TARGET=flash
+    - TARGET=js
+    - TARGET=node
+    - TARGET=php
+    - TARGET=python
 #    - TARGET=lua
 
 matrix:
