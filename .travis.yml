@@ -5,9 +5,8 @@ language: haxe
 
 os:
   - linux
-  - osx
-
-
+  - os: osx
+    osx_image: xcode7.2
 
 haxe:
   - "3.2.1"
@@ -32,9 +31,6 @@ env:
 #    - TARGET=lua
 
 matrix:
-  include:
-    - os: osx
-      osx_image: xcode7.2
   allow_failures:
     - haxe: development
 
