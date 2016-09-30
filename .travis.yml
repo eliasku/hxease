@@ -3,10 +3,6 @@ dist: trusty
 
 language: haxe
 
-os:
-  - linux
-  - osx
-
 haxe:
   - "3.2.1"
   - development
@@ -31,6 +27,10 @@ env:
 #    - TARGET=lua
 
 matrix:
+  include:
+    - os: linux
+    - os: osx
+      osx_image: xcode7.3
   allow_failures:
     - haxe: development
 
