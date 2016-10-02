@@ -7,18 +7,17 @@ haxe:
   - "3.2.1"
   - development
 
+osx_image: xcode7.3
+
 os:
   - linux
   - osx
-
-
 
 branches:
   only:
     - develop
 
 env:
-    osx_image: xcode7.3
     matrix:
     - TARGET=interp
     - TARGET=neko
