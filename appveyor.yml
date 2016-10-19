@@ -12,9 +12,6 @@ environment:
     - TARGET: flash
     - TARGET: js
     - TARGET: node
-    - TARGET: python
-#    - TARGET: php
-#    - TARGET: lua
 
 matrix:
   fast_finish: true

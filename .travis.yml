@@ -25,9 +25,6 @@ env:
     - TARGET=flash
     - TARGET=js
     - TARGET=node
-    - TARGET=php
-    - TARGET=python
-#    - TARGET=lua
 
 matrix:
   allow_failures:
