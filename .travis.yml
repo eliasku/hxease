@@ -34,7 +34,7 @@ matrix:
     - haxe: development
 
 install:
-  - haxelib dev hxlog .
+  - haxelib dev hxease .
   - haxelib git hxmake https://github.com/eliasku/hxmake.git
 
 script:
