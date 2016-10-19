@@ -9,7 +9,7 @@ haxe:
 
 os:
   - linux
-  - osx
+#  - osx
 
 branches:
   only:
